@@ -46,7 +46,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 
 nmap <Leader>f :Files<CR>
-nmap <Leader>l :Lines<CR>
+nmap <Leader>l :Ag<CR>
 
 " vim-airline
 let g:airline_theme = 'powerlineish'
@@ -95,4 +95,3 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
-
