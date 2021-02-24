@@ -1,7 +1,7 @@
 set number
 set numberwidth=1
 set mouse=a
-set clipboard=unnamed
+set clipboard=unnamedplus
 syntax enable
 set showcmd
 set ruler
@@ -46,6 +46,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 
 nmap <Leader>f :Files<CR>
+nmap <Leader>l :Lines<CR>
 
 " vim-airline
 let g:airline_theme = 'powerlineish'
