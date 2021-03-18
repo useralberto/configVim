@@ -1,1 +1,2 @@
 Intalar el ag paque que se encuentra dentro de la pagina: https://command-not-found.com/ag es para la busque mas especifica de palablas en los archivos.
+Instalar sudo npm install -g prettier para que funcione prettier.
