@@ -19,6 +19,12 @@ Plug 'morhetz/gruvbox'
 Plug 'tomasr/molokai'
 
 " IDE
+"Plug 'vim-scripts/AutoComplPop'
+"Plug 'maksimr/vim-jsbeautify'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'Yggdroot/indentLine'
+Plug 'mattn/emmet-vim'
+Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
@@ -31,7 +37,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdcommenter'
 call plug#end()
+
+let g:indentLine_char       = '▏'
 
 colorscheme gruvbox
 "colorscheme molokai
@@ -42,11 +51,16 @@ let mapleader=" "
 nmap <Leader>s  <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
 
+"map <Leader>kf :call JsBeautify()<cr>
+nmap <Leader>kf <Plug>(Prettier)
+
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 
 nmap <Leader>f :Files<CR>
 nmap <Leader>l :Ag<CR>
+:imap iq <Esc>
+:imap yy <C-y>,
 
 " vim-airline
 let g:airline_theme = 'powerlineish'
@@ -95,3 +109,11 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+functi
