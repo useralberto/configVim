@@ -11,25 +11,32 @@ set sw=2
 set relativenumber
 set laststatus=2
 set cursorline
+set tabstop=2 shiftwidth=2 expandtab | retab
+
+
+"" Tabs.
+"set tabstop=2
+"set softtabstop=0
+"set shiftwidth=2
+"set expandtab
+"set t_Co=256
 
 call plug#begin('~/.vim/plugged')
 
 " Themes
 Plug 'morhetz/gruvbox'
-Plug 'tomasr/molokai'
+"Plug 'tomasr/molokai'
+"Plug 'crusoexia/vim-monokai'
 
 " IDE
 "Plug 'vim-scripts/AutoComplPop'
 "Plug 'maksimr/vim-jsbeautify'
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-Plug 'Yggdroot/indentLine'
 Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
@@ -38,43 +45,36 @@ Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdcommenter'
+"Twig
+Plug 'nelsyeung/twig.vim'
 call plug#end()
 
-let g:indentLine_char       = '▏'
-
+let g:indentLine_char = '▏'
 colorscheme gruvbox
-"colorscheme molokai
-"let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_contrast_dark = "hard"
 let NERDTreeQuitOnOpen=1
-
 let mapleader=" "
+
 nmap <Leader>s  <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
-
-"map <Leader>kf :call JsBeautify()<cr>
 nmap <Leader>kf <Plug>(Prettier)
-
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-
 nmap <Leader>f :Files<CR>
 nmap <Leader>l :Ag<CR>
 :imap iq <Esc>
 :imap yy <C-y>,
+nmap <Tab> gt
+nmap <S-Tab> gT
+nmap <silent> <S-t> :tabnew<CR>
+
+map <C-n> :bnext<CR>
+map <C-m> :bprev<CR>
+
 
 " vim-airline
 let g:airline_theme = 'powerlineish'
-"let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
-"let g:airline#extensions#ale#enabled = 1
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tagbar#enabled = 1
-"let g:airline_skip_empty_sections = 1
-"let g:airline#extensions#hunks#enabled=0
-
-" vim-airline
-"let g:airline#extensions#virtualenv#enabled = 1
-" vim-airline
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
@@ -116,4 +116,15 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-functi
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+"coc AutoCompl
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
