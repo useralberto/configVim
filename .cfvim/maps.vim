@@ -1,5 +1,9 @@
 let mapleader=" "
 
+"Prettier
+nmap <leader>lk  <Plug>(coc-format-selected)
+nmap <leader>p :Prettier<CR>
+
 " Split Resize
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
@@ -8,7 +12,7 @@ nnoremap <Leader>< 10<C-w><
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 :imap iq <Esc>
-:imap yy <C-y>
+:imap yy <C-y>,
 
 " Plugs
 map <Leader>nt :NERDTreeFind<CR>
