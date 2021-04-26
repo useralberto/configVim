@@ -11,7 +11,7 @@ set showmatch
 set sw=2
 set relativenumber
 set laststatus=2
-"set tabstop=2 shiftwidth=2 expandtab | retab
+set nowrap
  
 "imports Config
 so ~/.configVim/.cfvim/listplugings.vim
@@ -23,4 +23,3 @@ let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
 set laststatus=2
 let g:indentLine_char = '▏'
-

@@ -5,25 +5,38 @@ nmap <leader>lk  <Plug>(coc-format-selected)
 nmap <leader>p :Prettier<CR>
 
 " Split Resize
-nnoremap <Leader>> 10<C-w>>
-nnoremap <Leader>< 10<C-w><
+nmap <Leader>> 10<C-w>>
+nmap <Leader>< 10<C-w><
+nmap <Leader>J 10<C-w>+
+nmap <Leader>K 10<C-w>-
+nmap <Leader>= <C-w>=
 
 " Quick Semi
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-:imap iq <Esc>
+:imap ii <Esc>
 :imap yy <C-y>,
 
 " Plugs
 map <Leader>nt :NERDTreeFind<CR>
 nmap <Leader>f :Files<CR>
-nmap <Leader>l :Ag<CR>
+nmap <Leader>ag :Ag<CR>
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+"Tabs
+nmap <Leader>kh :set tabstop=2 shiftwidth=2 expandtab<CR>
+nmap <Leader>kr :retab<CR>
+
+" tmux navigator
+nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<CR>
+nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 
 " Tabs navigation
 map <Leader>h :tabprevious<CR>
@@ -34,6 +47,7 @@ map <Leader>tn :tabnew<CR>
 map <Leader>ob :Buffers<CR>
 map <Leader>n :bnext<CR>
 map <Leader>m :bprev<CR>
+map <Leader>x :bw<CR>
 
 " Faster scrolling
 nnoremap <silent> <C-e> 10<C-e>

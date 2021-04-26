@@ -3,7 +3,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss'
 
-" Lightlane
+ "Lightlane
 let g:lightline = {
   \ 'active': {
   \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
@@ -37,6 +37,9 @@ let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 
+" tmux navigator
+let g:tmux_navigator_no_mappings = 1
+
 let g:javascript_plugin_flow = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -47,7 +50,6 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " COC
 "autocmd FileType python let b:coc_suggest_disable = 1
-"autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
 
 " vim fugitive
@@ -64,3 +66,13 @@ set hidden
 
 " Highlight symbol under cursor on CursorHold
 let $FZF_DEFAULT_OPTS='--layout=reverse'
+
+let g:neosnippet#snippets_directory='~/.vim/plugged/twig.vim/neosnippets'
+
+"Coc twig
+let g:coc_filetype_map = {
+  \ 'htmldjango': 'html',
+  \ 'blade': 'html',
+  \ 'twig': 'html',
+  \ 'jst': 'html',
+  \ }

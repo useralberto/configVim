@@ -15,6 +15,7 @@ Plug 'morhetz/gruvbox'
 
 " Tree
 Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
 " Typing
 Plug 'jiangmiao/auto-pairs'
@@ -22,7 +23,7 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
 " Tmux
-"Plug 'benmills/vimux'
+Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Autocomplete
@@ -32,6 +33,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
+
+"Go
+Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 
 " IDE
 Plug 'mattn/emmet-vim'
