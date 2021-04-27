@@ -14,7 +14,7 @@ nmap <Leader>= <C-w>=
 " Quick Semi
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-:imap ii <Esc>
+:imap iq <Esc>
 :imap yy <C-y>,
 
 " Plugs

@@ -11,7 +11,7 @@ set showmatch
 set sw=2
 set relativenumber
 set laststatus=2
-set nowrap
+"set nowrap
  
 "imports Config
 so ~/.configVim/.cfvim/listplugings.vim
