@@ -1,4 +1,4 @@
-# Mi configuración de nvim.
+# Configuración de nvim.
 
 Paquetes a instalar:
 
