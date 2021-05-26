@@ -10,6 +10,13 @@ snippet block "{% block ... %} ... {% endblock %}"
 {% endblock %}
 endsnippet
 
+snippet dump "{{ dump(...) }}"
+<pre>
+	{{ dump($0) }}
+</pre>
+endsnippet
+
+
 snippet embed "{% embed '...' %} ... {% endembed %}"
 {% embed '${1:template}' %}
 	{% block $2 %}
