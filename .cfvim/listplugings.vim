@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'nelsyeung/twig.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " status bar
 Plug 'maximbaz/lightline-ale'

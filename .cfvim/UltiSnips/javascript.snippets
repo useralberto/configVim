@@ -56,7 +56,7 @@ snippet des "const {} =" b
 const { $1 } = $2
 endsnippet
 
-snippet rfc "React function component" b
+snippet rfcn "React function component" b
 import React from 'react'
 import { ${4} } from 'react-native'
 
@@ -65,5 +65,14 @@ const $1 = ${2:( $3 )} => (
     $5
   </$4>
 )
+export default $1
+endsnippet
+
+snippet rfc "React function component" b
+import React from 'react'
+
+const $1 = ${2:( $3 )} => {
+
+}
 export default $1
 endsnippet

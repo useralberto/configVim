@@ -3,6 +3,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss'
 
+
  "Lightlane
 let g:lightline = {
   \ 'active': {
@@ -67,7 +68,6 @@ set hidden
 " Highlight symbol under cursor on CursorHold
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 
-"let g:neosnippet#snippets_directory='~/.vim/plugged/twig.vim/neosnippets'
 
 let g:multi_cursor_quit_key = '<A-q>'
 
