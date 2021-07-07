@@ -18,7 +18,7 @@ Paquetes de coc:
 Extra:
 
 - zshrc:
-- ```
+```
 alias v=openNvim
 function openNvim {
   if [ $# -eq 0 ]; then
