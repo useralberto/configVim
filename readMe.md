@@ -18,12 +18,13 @@ Paquetes de coc:
 Extra:
 
 - zshrc:
-- "alias v=openNvim
-  function openNvim {
-    if [ $# -eq 0 ]; then
-      nvim ./
-    else
-      nvim $1
-    fi
-  }
-  "
+- ```
+alias v=openNvim
+function openNvim {
+  if [ $# -eq 0 ]; then
+    nvim ./
+  else
+    nvim $1
+  fi
+}
+```
