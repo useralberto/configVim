@@ -2,16 +2,19 @@
 
 Paquetes a instalar:
 
-- Instalar el ag paque que se encuentra dentro de la pagina: https://command-not-found.com/ag es para la busque mas especifica de palablas en los archivos.
-- Instalar nvim https://github.com/neovim/neovim/wiki/Installing-Neovim
-- Instalar vim-plug https://github.com/junegunn/vim-plug
-- Instalar Tmux sudo apt install tmux
+- Instalar [Vim](https://github.com/neovim/neovim/wiki/Installing-Neovim "Vim")
+- Instalar el ag paque que se encuentra dentro de la pagina: [ag](https://command-not-found.com/ag "ag") es para la busque mas especifica de palablas en los archivos.
+- Instalar [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
+- Instalar Tmux sudo apt install tmux (Opcional)
+- Clonar el proyecto git clone https://...
+- Crear un enlace Enlace simbólico en tu directorio vim o neovim
+- inicar vim y ejecutar :PlugInstall
+- listo...
 
 Paquetes de coc:
 
-- :CocInstall coc-tsserver
-- :CocInstall coc-css
-- :CocInstall coc-python
-- :CocInstall coc-go
-- :CocInstall coc-vetur
-- :CocInstall coc-react-refactor
+- El uso de las extensiones de coc se migro a la una variable global "coc_global_extensions" en ~/.configVim/.cfvim/pluginConfig.vim
+
+Extra:
+
+- zshrc:

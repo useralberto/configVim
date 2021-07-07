@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'nelsyeung/twig.vim'
 Plug 'editorconfig/editorconfig-vim'
-
+Plug 'junegunn/rainbow_parentheses.vim'
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'

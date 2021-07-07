@@ -3,6 +3,27 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss'
 
+let g:coc_global_extensions = [
+  \'coc-markdownlint',
+  \'coc-highlight',
+  \'coc-vetur',
+  \'coc-go',
+  \'coc-python',
+  \'coc-json', 
+  \'coc-git',
+  \'coc-tsserver',
+  \'coc-css',
+  \'coc-python',
+  \'coc-go',
+  \'coc-vetur',
+  \'coc-react-refactor',
+  \'coc-prettier',
+  \'coc-emmet',
+  \'coc-angular',
+  \'coc-neosnippet',
+  \'coc-html',
+\]
+
 
  "Lightlane
 let g:lightline = {
