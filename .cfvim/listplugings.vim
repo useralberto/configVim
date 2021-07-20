@@ -11,6 +11,7 @@ Plug 'itchyny/lightline.vim'
 
 " Themes
 Plug 'morhetz/gruvbox'
+Plug 'phanviet/vim-monokai-pro'
 "Plug 'tomasr/molokai'
 "Plug 'crusoexia/vim-monokai'
 

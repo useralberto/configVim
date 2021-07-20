@@ -25,7 +25,7 @@ let g:coc_global_extensions = [
 \]
 
 
- "Lightlane
+"Lightlane
 let g:lightline = {
   \ 'active': {
   \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
@@ -43,7 +43,7 @@ let g:lightline = {
   \   'gitbranch': 'fugitive#head',
   \   'kitestatus': 'kite#statusline'
   \ },
-  \ 'colorscheme': 'gruvbox',
+  \ 'colorscheme': 'monokai_pro',
   \ 'subseparator': {
   \   'left': '',
   \   'right': ''
@@ -93,8 +93,9 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
 let g:multi_cursor_quit_key = '<A-q>'
 
 "Coc twig
-"let g:coc_filetype_map = {
-  "\ 'blade': 'html',
-  "\ 'twig': 'html',
-  "\ 'jst': 'html',
-  "\ }
+let g:coc_filetype_map = {
+  \ 'blade': 'html',
+  \ 'twig': 'html',
+  \ 'jst': 'html',
+  \ 'htmldjango': 'html',
+  \ }
