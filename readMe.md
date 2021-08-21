@@ -1,16 +1,43 @@
-# Configuración de nvim.
+# ¡Inténtalo tú mismo! 🤠
 
-Paquetes a instalar:
+## Configuración inicial:
 
 - Instalar [Vim](https://github.com/neovim/neovim/wiki/Installing-Neovim "Vim")
-- Instalar el paquete ag: [ag](https://commandz-not-found.com/ag "ag") es para la busque mas especifica de palabras en los archivos.
+- Instalar el paquete 
+-- Linux:  [silversearcher-ag](https://command-not-found.com/ag "ag")
+-- Mac os: [silversearcher-ag](https://github.com/ggreer/the_silver_searcher) 
 - Instalar [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
-- Instalar Tmux sudo apt install tmux (Opcional)
-- Clonar el proyecto git clone git@github.com:useralberto/configVim.git
-- Renombrar el directorio clonado de configVim a .configVim (Linux, Mac os: mv configVim .configVim/, Windows: Click Derecho Cambiar nombre)
-- Crear un enlace simbólico de los archivos init.vim y coc-settings.json en tu directorio vim o neovim( Linux: home/.vim ó home/.config/nvim/)
-- Inicia vim y ejecuta :PlugInstall (Al iniciar por primera vez ignora los warning que se muestran, son los plugins que no están instalados)
-- Listo 🥳 🎉 🤠...
+- Instalar Tmux
+  - Linux: `sudo apt install tmux` (Opcional)
+  - Mac os: `brew install tmux`
+- Clonar el proyecto 
+	-  `git clone git@github.com:useralberto/configVim.git`
+- Renombrar el directorio clonado: 
+	- Linux, Mac os:  ` mv configVim .configVim/` 
+
+- Identifica tu directorio Vim o Neovim el cual tengas instalado.
+Ejemplo Linux y Mac os: 
+	- Vim: `/home/$your-user/.vim/`
+	- Nvim `/home/$your-user/.config/nvim/`
+- Crear un enlace simbólico de los archivos init.vim y coc-settings.json
+en tu directorio vim o neovim
+Ejemplo Linux y Mac os:
+	- Vim:
+		``` 
+		1. cd /home/$your-user/.vim/
+		2. ls -s /home/$your-user/.configVim/init.vim
+		3. ls -s /home/$your-user/.configVim/coc-settings.json
+		```
+	- Neovim:
+		```
+		1. /home/$your-user/.config/nvim/
+		2. ls -s /home/$your-user/.configVim/init.vim
+		3. ls -s /home/$your-user/.configVim/coc-settings.json
+		``` 
+
+- Inicia vim y ejecuta: 
+	- `:PlugInstall` (Al iniciar por primera vez ignora los warnings que se muestran, son los plugins que no están instalados)
+- Listo 🥳 🎉 🤠
 
 Paquetes de coc:
 
@@ -18,7 +45,8 @@ Paquetes de coc:
 
 Extra:
 
-- zshrc:
+-  Instalar una fuente de [Nerd Fonts](https://www.nerdfonts.com/font-downloads)  la que más te agrade.
+- Si usas zsh puedes agregar lo siguiente en tu archivo: .zshrc
 
 ```
 alias v=openNvim
@@ -30,3 +58,8 @@ function openNvim {
   fi
 }
 ```
+- Reiniciar la consola.
+- y para iniciar vim solo escribe `v` en la consola.
+- Screenshots: 
+
+ ![Screenshot_20210821_161226](https://user-images.githubusercontent.com/31530471/130334874-b2ab15d0-789a-4ed8-a872-5c76078af8ba.png)
