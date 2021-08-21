@@ -4,8 +4,8 @@
 
 - Instalar [Vim](https://github.com/neovim/neovim/wiki/Installing-Neovim "Vim")
 - Instalar el paquete 
--- Linux:  [silversearcher-ag](https://command-not-found.com/ag "ag")
--- Mac os: [silversearcher-ag](https://github.com/ggreer/the_silver_searcher) 
+	- Linux:  [silversearcher-ag](https://command-not-found.com/ag "ag")
+	- Mac os: [silversearcher-ag](https://github.com/ggreer/the_silver_searcher) 
 - Instalar [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
 - Instalar Tmux
   - Linux: `sudo apt install tmux` (Opcional)
