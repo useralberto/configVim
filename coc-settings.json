@@ -1,4 +1,19 @@
 {
-	"suggest.noselect": false,
-	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "html", "twig", "js", "python"],
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "markdown",
+    "html",
+    "twig",
+    "python",
+    "json",
+    "jsonc",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "css",
+    "scss",
+    "sass",
+    "graphql"
+  ]
 }
