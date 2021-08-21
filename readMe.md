@@ -9,7 +9,7 @@
 - Instalar [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
 - Instalar Tmux
   - Linux: `sudo apt install tmux` (Opcional)
-  - Mac os: `brew install tmux`
+  - Mac os: `brew install tmux` (Opcional)
 - Clonar el proyecto 
 	-  `git clone git@github.com:useralberto/configVim.git`
 - Renombrar el directorio clonado: 
