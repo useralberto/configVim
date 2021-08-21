@@ -22,7 +22,8 @@ let g:coc_global_extensions = [
   \'coc-angular',
   \'coc-neosnippet',
   \'coc-html',
-  \'coc-pairs'
+  \'coc-pairs',
+  \'coc-eslint'
 \]
 
 

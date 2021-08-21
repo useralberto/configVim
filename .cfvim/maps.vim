@@ -1,7 +1,7 @@
 let mapleader=" "
 
 "Prettier
-nmap <leader>lk  <Plug>(coc-format-selected)
+nmap <leader>lp  <Plug>(coc-format-selected)
 nmap <leader>p :Prettier<CR>
 
 " Split Resize
