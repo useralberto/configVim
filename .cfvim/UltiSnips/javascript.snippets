@@ -28,6 +28,15 @@ $1 ($2) {
 }
 endsnippet
 
+snippet try "try{}catch(){}" i
+try {
+  $4
+}catch($1) {
+  console.log('Exception in $2 => ' + $3);
+}
+endsnippet
+
+
 snippet it "it('', () => {})" b
 it('$1', () => {
   $2
