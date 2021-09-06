@@ -24,9 +24,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
-" Tmux
-"Plug 'benmills/vimux'
-"Plug 'christoomey/vim-tmux-navigator'
+"Tmux
+Plug 'benmills/vimux'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Autocomplete
 Plug 'sirver/ultisnips'
@@ -34,6 +34,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Git
 Plug 'tpope/vim-fugitive'
+
 Plug 'tpope/vim-repeat'
 
 "Go
