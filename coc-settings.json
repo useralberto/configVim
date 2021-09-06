@@ -14,7 +14,8 @@
     "css",
     "scss",
     "sass",
-    "graphql"
+    "graphql",
+    "vue"
   ],
   "eslint.autoFixOnSave": true,
   "eslint.autoFix": true
