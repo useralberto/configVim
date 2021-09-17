@@ -1,9 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 " syntax
-"Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 "Plug 'nelsyeung/twig.vim'
-Plug 'lumiliet/vim-twig'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 
