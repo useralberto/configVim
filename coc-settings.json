@@ -3,7 +3,6 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "markdown",
     "html",
-    "twig",
     "python",
     "json",
     "jsonc",

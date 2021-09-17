@@ -1,8 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
 " syntax
-Plug 'sheerun/vim-polyglot'
-Plug 'nelsyeung/twig.vim'
+"Plug 'sheerun/vim-polyglot'
+"Plug 'nelsyeung/twig.vim'
+Plug 'lumiliet/vim-twig'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 
@@ -22,7 +23,7 @@ Plug 'scrooloose/nerdtree'
 
 " Typing
 Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 
 "Tmux
 Plug 'benmills/vimux'
@@ -33,9 +34,8 @@ Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Git
-Plug 'tpope/vim-fugitive'
-
-Plug 'tpope/vim-repeat'
+"Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-repeat'
 
 "Go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
