@@ -2,9 +2,9 @@ call plug#begin('~/.vim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-"Plug 'nelsyeung/twig.vim'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'Yggdroot/indentLine'
 
 " status bar
 Plug 'maximbaz/lightline-ale'

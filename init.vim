@@ -13,7 +13,7 @@ set shiftwidth=2
 set tabstop=2
 set autoindent
 
-"set nowrap
+set nowrap
 syntax on
  
 "imports Config
@@ -33,6 +33,7 @@ so ~/.configVim/.cfvim/pluginConfig.vim
 if has('termguicolors')
   set termguicolors
 endif
+
 " The configuration options should be placed before `colorscheme sonokai`.
 let g:sonokai_style = 'espresso'
 let g:sonokai_enable_italic = 1

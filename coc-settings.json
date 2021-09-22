@@ -14,7 +14,8 @@
     "scss",
     "sass",
     "graphql",
-    "vue"
+    "vue",
+    "twig"
   ],
   "eslint.autoFixOnSave": true,
   "eslint.autoFix": true

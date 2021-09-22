@@ -95,10 +95,6 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
 
 let g:multi_cursor_quit_key = '<A-q>'
 
-"Coc twig
-"let g:coc_filetype_map = {
-  "\ 'blade': 'html',
-  "\ 'twig': 'html',
-  "\ 'jst': 'html',
-  "\ 'htmldjango': 'html',
-  "\ }
+let g:coc_filetype_map = {
+  \ 'html.twig': 'twig',
+  \ }
