@@ -97,4 +97,5 @@ let g:multi_cursor_quit_key = '<A-q>'
 
 let g:coc_filetype_map = {
   \ 'html.twig': 'twig',
+  \ 'html.twig.js.css': 'twig',
   \ }

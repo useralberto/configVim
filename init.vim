@@ -1,3 +1,4 @@
+syntax on
 set number
 set mouse=a
 set numberwidth=1
@@ -12,9 +13,7 @@ set laststatus=2
 set shiftwidth=2
 set tabstop=2
 set autoindent
-
-set nowrap
-syntax on
+"set nowrap
  
 "imports Config
 so ~/.configVim/.cfvim/listplugings.vim
