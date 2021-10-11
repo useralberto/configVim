@@ -13,7 +13,8 @@ set laststatus=2
 set shiftwidth=2
 set tabstop=2
 set autoindent
-"set nowrap
+set showmatch
+set nowrap
  
 "imports Config
 so ~/.configVim/.cfvim/listplugings.vim
@@ -41,5 +42,18 @@ let g:sonokai_diagnostic_text_highlight = 1
 let g:sonokai_better_performance = 1
 colorscheme sonokai
 
-highlight Normal ctermbg=NONE
-let g:indentLine_char = '▏'
+"highlight Normal ctermbg=NONE
+"let g:indentLine_char = '▏'
+
+lua << EOF
+  vim.opt.list = true
+  vim.opt.listchars:append("eol:↴")
+  --vim.opt.listchars:append("space:⋅")
+  
+  require("indent_blankline").setup {
+    show_current_context = false,
+    show_end_of_line = true,
+    buftype_exclude = {"terminal"},
+    space_char_blankline = " ",
+  }
+EOF
