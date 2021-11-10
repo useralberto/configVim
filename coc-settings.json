@@ -15,8 +15,7 @@
     "sass",
     "graphql",
     "vue",
-    "twig"
-  ],
-  "eslint.autoFixOnSave": true,
-  "eslint.autoFix": true
+    "twig",
+    "php"
+  ]
 }

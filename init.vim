@@ -9,12 +9,10 @@ set ruler
 set encoding=utf-8
 set showmatch
 set relativenumber
-set laststatus=2
-set shiftwidth=2
-set tabstop=2
 set autoindent
-set showmatch
 set nowrap
+
+filetype plugin indent on
  
 "imports Config
 so ~/.configVim/.cfvim/listplugings.vim
@@ -22,38 +20,28 @@ so ~/.configVim/.cfvim/maps.vim
 so ~/.configVim/.cfvim/pluginConfig.vim
 
 
-"set termguicolors
 "colorscheme monokai_pro
 
 "colorscheme gruvbox
-"let g:monokai_pro_contrast_dark = "hard"
-"
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
+"highlight Normal ctermbg=NONE
+set laststatus=2
+set noshowmode
 
 " Important!!
-if has('termguicolors')
-  set termguicolors
-endif
+"if has('termguicolors')
+  "set termguicolors
+"endif
 
-" The configuration options should be placed before `colorscheme sonokai`.
-let g:sonokai_style = 'espresso'
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 1
-let g:sonokai_diagnostic_text_highlight = 1
-let g:sonokai_better_performance = 1
-colorscheme sonokai
+"" The configuration options should be placed before `colorscheme sonokai`.
+"let g:sonokai_style = 'espresso'
+"let g:sonokai_enable_italic = 1
+"let g:sonokai_disable_italic_comment = 1
+"let g:sonokai_diagnostic_text_highlight = 1
+"let g:sonokai_better_performance = 1
+"colorscheme sonokai
 
-"highlight Normal ctermbg=NONE
-"let g:indentLine_char = '▏'
-
-lua << EOF
-  vim.opt.list = true
-  vim.opt.listchars:append("eol:↴")
-  --vim.opt.listchars:append("space:⋅")
-  
-  require("indent_blankline").setup {
-    show_current_context = false,
-    show_end_of_line = true,
-    buftype_exclude = {"terminal"},
-    space_char_blankline = " ",
-  }
-EOF
+let g:indentLine_char = '▏'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_defaultGroup = 'SpecialKey'

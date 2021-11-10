@@ -27,31 +27,54 @@ let g:coc_global_extensions = [
   \'coc-flow'
 \]
 
+let g:lightline = {
+      \ 'active': {
+      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
+      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \ },
+      \ 'inactive': {
+      \   'left': [['inactive'], ['relativepath']],
+      \   'right': [['bufnum']]
+      \ },
+      \ 'component': {
+      \   'bufnum': '%n',
+      \   'inactive': 'inactive'
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head',
+      \   'kitestatus': 'kite#statusline'
+      \ },
+      \ 'colorscheme': 'gruvbox',
+      \ 'subseparator': {
+      \   'left': '',
+      \   'right': ''
+      \ }
+      \}
 
 "Lightlane
-let g:lightline = {
-  \ 'active': {
-  \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-  \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
-  \ },
-  \ 'inactive': {
-  \   'left': [['inactive'], ['relativepath']],
-  \   'right': [['bufnum']]
-  \ },
-  \ 'component': {
-  \   'bufnum': '%n',
-  \   'inactive': 'inactive'
-  \ },
-  \ 'component_function': {
-  \   'gitbranch': 'fugitive#head',
-  \   'kitestatus': 'kite#statusline'
-  \ },
-  \ 'colorscheme': 'sonokai',
-  \ 'subseparator': {
-  \   'left': '',
-  \   'right': ''
-  \ }
-\}
+"let g:lightline = {
+  "\ 'active': {
+  "\   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
+  "\   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+  "\ },
+  "\ 'inactive': {
+  "\   'left': [['inactive'], ['relativepath']],
+  "\   'right': [['bufnum']]
+  "\ },
+  "\ 'component': {
+  "\   'bufnum': '%n',
+  "\   'inactive': 'inactive'
+  "\ },
+  "\ 'component_function': {
+  "\   'gitbranch': 'fugitive#head',
+  "\   'kitestatus': 'kite#statusline'
+  "\ },
+  "\ 'colorscheme': 'sonokai',
+  "\ 'subseparator': {
+  "\   'left': '',
+  "\   'right': ''
+  "\ }
+"\}
 
 " Nerdtree
 let NERDTreeShowHidden=1
@@ -75,7 +98,10 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " COC
 "autocmd FileType python let b:coc_suggest_disable = 1
+"autocmd FileType twig setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType scss setl iskeyword+=@-@
+
+au BufNewFile,BufRead *.html set filetype=htmldjango
 
 " vim fugitive
 command! -bang -nargs=? -complete=dir GFiles
@@ -96,6 +122,5 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
 let g:multi_cursor_quit_key = '<A-q>'
 
 let g:coc_filetype_map = {
-  \ 'html.twig': 'twig',
-  \ 'html.twig.js.css': 'twig',
-  \ }
+  \'html.twig': 'twig'
+  \}

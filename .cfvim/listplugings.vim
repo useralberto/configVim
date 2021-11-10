@@ -4,20 +4,22 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
-"Plug 'Yggdroot/indentLine'
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'Yggdroot/indentLine'
+"Plug 'sbdchd/neoformat'
+"Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'frazrepo/vim-rainbow'
+"
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-"Plug 'morhetz/gruvbox'
-"Plug 'phanviet/vim-monokai-pro'
+Plug 'morhetz/gruvbox'
 Plug 'sainnhe/sonokai'
-"Plug 'tomasr/molokai'
-"Plug 'crusoexia/vim-monokai'
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -51,3 +53,4 @@ Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdcommenter'
 
 call plug#end()
+

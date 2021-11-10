@@ -37,6 +37,9 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <Leader>kh :set tabstop=2 shiftwidth=2 expandtab<CR>
 nmap <Leader>kr :retab<CR>
 
+nmap <Leader>g mzgg=G`z<CR>
+
+
 " tmux navigator
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<CR>
 nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
