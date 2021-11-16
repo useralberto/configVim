@@ -31,8 +31,8 @@ Ejemplo Linux y Mac os:
 	- Neovim:
 		```
 		1. /home/$your-user/.config/nvim/
-		2. ls -s /home/$your-user/.configVim/init.vim
-		3. ls -s /home/$your-user/.configVim/coc-settings.json
+		2. ln -s /home/$your-user/.configVim/init.vim
+		3. ln -s /home/$your-user/.configVim/coc-settings.json
 		``` 
 
 - Inicia vim y ejecuta: 
