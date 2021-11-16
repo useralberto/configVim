@@ -10,15 +10,14 @@ set encoding=utf-8
 set showmatch
 set relativenumber
 set autoindent
-set nowrap
+"set nowrap
 
 filetype plugin indent on
- 
+
 "imports Config
 so ~/.configVim/.cfvim/listplugings.vim
 so ~/.configVim/.cfvim/maps.vim
 so ~/.configVim/.cfvim/pluginConfig.vim
-
 
 "colorscheme monokai_pro
 

@@ -3,9 +3,10 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss'
 
-
 let g:coc_global_extensions = [
+  \'coc-phpls',
   \'coc-markdownlint',
+  \'coc-java',
   \'coc-vetur',
   \'coc-highlight',
   \'coc-go',

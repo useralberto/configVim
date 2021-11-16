@@ -37,19 +37,17 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <Leader>kh :set tabstop=2 shiftwidth=2 expandtab<CR>
 nmap <Leader>kr :retab<CR>
 
-nmap <Leader>g mzgg=G`z<CR>
-
 
 " tmux navigator
-nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<CR>
-nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
+nnoremap <Leader><C-h> :TmuxNavigateLeft<CR>
+nnoremap <Leader><C-j> :TmuxNavigateDown<CR>
+nnoremap <Leader><C-k> :TmuxNavigateUp<CR>
+nnoremap <Leader><C-l> :TmuxNavigateRight<CR>
 
 " Tabs navigation
-map <Leader>h :tabprevious<CR>
-map <Leader>l :tabnext<CR>
-map <Leader>tn :tabnew<CR>
+"map <Leader>h :tabprevious<CR>
+"map <Leader>l :tabnext<CR>
+"map <Leader>tn :tabnew<CR>
 
 " Buffers
 map <Leader>ob :Buffers<CR>
