@@ -60,6 +60,18 @@ function openNvim {
 ```
 - Reiniciar la consola.
 - y para iniciar vim solo escribe `v` en la consola.
-- Screenshots: 
+
+
+Prettier Plugins para soporte lenguajes twig, php, etc: 
+- Lista de plugins:
+	- [PHP Plugin](https://github.com/prettier/plugin-php)
+	- [Prettier for Melody](https://github.com/trivago/prettier-plugin-twig-melody)
+	- [Prettier Java](https://github.com/jhipster/prettier-java)
+- Instalacion:
+	- cd ~/.config/coc/extensions/node_modules/coc-prettier
+	- ln -s ~/.configVim/.prettierrc
+	- npm install $plugin --save-dev
+
+Screenshots: 
 
  ![Screenshot_20210821_161226](https://user-images.githubusercontent.com/31530471/130334874-b2ab15d0-789a-4ed8-a872-5c76078af8ba.png)
