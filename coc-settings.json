@@ -16,6 +16,7 @@
     "graphql",
     "vue",
     "twig",
-    "php"
+    "php",
+    "java"
   ]
 }
