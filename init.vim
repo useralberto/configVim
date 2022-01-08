@@ -22,9 +22,19 @@ so ~/.configVim/.cfvim/pluginConfig.vim
 "colorscheme monokai_pro
 
 "colorscheme gruvbox
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+"let g:gruvbox_contrast_dark = "hard"
 "highlight Normal ctermbg=NONE
+
+
+if has('termguicolors')
+  set termguicolors
+endif
+let g:edge_style = 'aura'
+let g:edge_enable_italic = 1
+let g:edge_disable_italic_comment = 1
+colorscheme edge
+
+
 set laststatus=2
 set noshowmode
 
@@ -40,6 +50,7 @@ set noshowmode
 "let g:sonokai_diagnostic_text_highlight = 1
 "let g:sonokai_better_performance = 1
 "colorscheme sonokai
+
 
 let g:indentLine_char = '▏'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']

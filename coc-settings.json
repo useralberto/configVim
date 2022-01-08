@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
+  "vetur.trace.server": "verbose",
   "coc.preferences.formatOnSaveFiletypes": [
     "markdown",
     "html",
@@ -18,5 +19,10 @@
     "twig",
     "php",
     "java"
-  ]
+  ],
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "~/.local/bin/autopep8",
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }

@@ -5,6 +5,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'Yggdroot/indentLine'
+Plug 'AndrewRadev/tagalong.vim'
 "Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'frazrepo/vim-rainbow'
 
@@ -15,6 +16,7 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/sonokai'
+Plug 'sainnhe/edge'
 
 " Tree
 Plug 'scrooloose/nerdtree'

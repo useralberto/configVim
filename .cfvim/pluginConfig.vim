@@ -3,19 +3,19 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss'
 
+
+"\'coc-python',
 let g:coc_global_extensions = [
+  \'coc-pyright',
   \'coc-phpls',
   \'coc-markdownlint',
   \'coc-java',
-  \'coc-vetur',
   \'coc-highlight',
   \'coc-go',
-  \'coc-python',
   \'coc-json', 
   \'coc-git',
   \'coc-tsserver',
   \'coc-css',
-  \'coc-python',
   \'coc-go',
   \'coc-react-refactor',
   \'coc-prettier',
@@ -25,7 +25,8 @@ let g:coc_global_extensions = [
   \'coc-html',
   \'coc-pairs',
   \'coc-eslint',
-  \'coc-flow'
+  \'coc-flow',
+  \'coc-vetur',
 \]
 
 let g:lightline = {
@@ -45,7 +46,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'edge',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
