@@ -24,10 +24,10 @@ let g:coc_global_extensions = [
   \'coc-neosnippet',
   \'coc-html',
   \'coc-pairs',
-  \'coc-eslint',
   \'coc-flow',
   \'coc-vetur',
 \]
+"\'coc-eslint',
 
 let g:lightline = {
       \ 'active': {
@@ -46,7 +46,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'edge',
+      \ 'colorscheme': 'sonokai',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
