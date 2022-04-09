@@ -1,3 +1,4 @@
+//"vetur.trace.server": "verbose",
 {
   "suggest.noselect": false,
   "vetur.trace.server": "verbose",
@@ -7,6 +8,7 @@
     "python",
     "json",
     "jsonc",
+    "vue",
     "javascript",
     "javascriptreact",
     "typescript",
@@ -15,7 +17,6 @@
     "scss",
     "sass",
     "graphql",
-    "vue",
     "twig",
     "php",
     "java"
@@ -23,6 +24,6 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Path": "~/.local/bin/autopep8",
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
+  "python.formatting.autopep8Path": "~/.local/bin/autopep8"
+  //"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }

@@ -6,6 +6,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'Yggdroot/indentLine'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'posva/vim-vue'
+"Plug 'posva/vim-vue'
 "Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'frazrepo/vim-rainbow'
 

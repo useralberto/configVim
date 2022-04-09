@@ -26,30 +26,30 @@ so ~/.configVim/.cfvim/pluginConfig.vim
 "highlight Normal ctermbg=NONE
 
 
-if has('termguicolors')
-  set termguicolors
-endif
-let g:edge_style = 'aura'
-let g:edge_enable_italic = 1
-let g:edge_disable_italic_comment = 1
-colorscheme edge
+"if has('termguicolors')
+  "set termguicolors
+"endif
+"let g:edge_style = 'aura'
+"let g:edge_enable_italic = 1
+"let g:edge_disable_italic_comment = 1
+"colorscheme edge
 
 
 set laststatus=2
 set noshowmode
 
-" Important!!
-"if has('termguicolors')
-  "set termguicolors
-"endif
+"Important!!
+if has('termguicolors')
+  set termguicolors
+endif
 
-"" The configuration options should be placed before `colorscheme sonokai`.
-"let g:sonokai_style = 'espresso'
-"let g:sonokai_enable_italic = 1
-"let g:sonokai_disable_italic_comment = 1
-"let g:sonokai_diagnostic_text_highlight = 1
-"let g:sonokai_better_performance = 1
-"colorscheme sonokai
+" The configuration options should be placed before `colorscheme sonokai`.
+let g:sonokai_style = 'espresso'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 1
+let g:sonokai_diagnostic_text_highlight = 1
+let g:sonokai_better_performance = 1
+colorscheme sonokai
 
 
 let g:indentLine_char = '▏'

@@ -1,10 +1,13 @@
 "Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss'
+let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss,*.vue'
 
+"let g:vue_pre_processors = ['pug', 'scss']
+"let g:vue_pre_processors = 'detect_on_enter'
 
 "\'coc-python',
+"\'coc-tabnine',
 let g:coc_global_extensions = [
   \'coc-pyright',
   \'coc-phpls',
@@ -24,10 +27,10 @@ let g:coc_global_extensions = [
   \'coc-neosnippet',
   \'coc-html',
   \'coc-pairs',
-  \'coc-eslint',
   \'coc-flow',
   \'coc-vetur',
 \]
+"\'coc-eslint',
 
 let g:lightline = {
       \ 'active': {
@@ -46,7 +49,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'edge',
+      \ 'colorscheme': 'sonokai',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -99,7 +102,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " COC
-"autocmd FileType python let b:coc_suggest_disable = 1
+autocmd FileType vue b:coc_suggest_disable = 1
 "autocmd FileType twig setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType scss setl iskeyword+=@-@
 
