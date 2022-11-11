@@ -4,7 +4,7 @@
 
 - Instalar [Vim](https://github.com/neovim/neovim/wiki/Installing-Neovim "Vim")
 - Instalar el paquete
-  - [fb][https://github.com/sharkdp/fd]
+  - [fb](https://github.com/sharkdp/fd)
 - Instalar [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
 - Instalar Tmux
   - Linux: `sudo apt install tmux` (Opcional)
