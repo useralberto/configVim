@@ -15,9 +15,9 @@ set autoindent
 filetype plugin indent on
 
 "imports Config
-so ~/.configVim/.cfvim/listplugings.vim
-so ~/.configVim/.cfvim/maps.vim
-so ~/.configVim/.cfvim/pluginConfig.vim
+so ~/.configVim/.settings/plugins/list.vim
+so ~/.configVim/.settings/plugins/configs.vim
+so ~/.configVim/.settings/maps.vim
 
 "augroup nerdtreehidecwd
  " autocmd!
