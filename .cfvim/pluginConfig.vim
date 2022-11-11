@@ -121,7 +121,7 @@ set hidden
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 
 
-let g:multi_cursor_quit_key = '<A-q>'
+let g:multi_cursor_quit_key = '<C-q>'
 
 let g:coc_filetype_map = {
   \'html.twig': 'twig',

@@ -12,20 +12,32 @@ nmap <Leader>K 10<C-w>-
 nmap <Leader>= <C-w>=
 map <silent> vv <c-w>v<CR>
 map <silent> cc <c-w>s<CR>
-
-nmap <A-j> :m .+1<CR>==
-nmap <A-k> :m .-2<CR>==
+nmap <C-j> :m .+1<CR>==
+nmap <C-k> :m .-2<CR>==
 
 " Quick Semi
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-:imap iq <Esc>
 :imap yy <C-y>,
+:imap qq <Esc>,
 
 " Plugs
 map <Leader>nt :NERDTreeFind<CR>
-nmap <Leader>f :Files<CR>
-nmap <Leader>ag :Ag<CR>
+"nmap <Leader>f :Files<CR>
+"nmap <Leader>ag :Ag<CR>
+
+
+"Telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>ag <cmd>Telescope live_grep<cr>
+nnoremap <leader>ob <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>gc <cmd>Telescope git_commits<cr>
+nnoremap <leader>gbc <cmd>Telescope git_bcommits<cr>
+nnoremap <leader>gb <cmd>Telescope git_branches<cr>
+nnoremap <leader>gs <cmd>Telescope git_status<cr>
+nnoremap <leader>gst <cmd>Telescope git_stash<cr>
+
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -50,10 +62,10 @@ nnoremap <Leader><C-l> :TmuxNavigateRight<CR>
 "map <Leader>tn :tabnew<CR>
 
 " Buffers
-map <Leader>ob :Buffers<CR>
-map <Leader>n :bnext<CR>
-map <Leader>m :bprev<CR>
-map <Leader>x :bw<CR>
+"map <Leader>ob :Buffers<CR>
+"map <Leader>n :bnext<CR>
+"map <Leader>m :bprev<CR>
+"map <Leader>x :bw<CR>
 
 " Faster scrolling
 nnoremap <silent> <C-e> 10<C-e>

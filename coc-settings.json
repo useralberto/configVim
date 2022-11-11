@@ -20,9 +20,13 @@
     "php",
     "java"
   ],
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+  "pyright.enable": true,
   "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Path": "~/.local/bin/autopep8",
+  "python.formatting.autopep8Args": ["--indent-size=2"],
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }
+
+//"python.linting.enabled": true,
+//"python.linting.pylintEnabled": true,
+//"python.formatting.provider": "autopep8",
+//"python.formatting.autopep8Path": "/usr/local/bin/autopep8"

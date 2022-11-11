@@ -19,6 +19,14 @@ so ~/.configVim/.cfvim/listplugings.vim
 so ~/.configVim/.cfvim/maps.vim
 so ~/.configVim/.cfvim/pluginConfig.vim
 
+"augroup nerdtreehidecwd
+ " autocmd!
+  "autocmd FileType nerdtree setlocal conceallevel=3
+    "\ | syntax match NERDTreeHideCWD #^[</].*$# conceal
+    "\ | setlocal concealcursor=n
+"augroup end
+
+
 "colorscheme monokai_pro
 
 "colorscheme gruvbox
@@ -51,6 +59,30 @@ let g:sonokai_diagnostic_text_highlight = 1
 let g:sonokai_better_performance = 1
 colorscheme sonokai
 
+lua << EOF
+require('telescope').setup {
+  defaults = {
+    preview = {
+      treesitter = false
+    }
+  },
+  extensions = {
+    fzf = {
+      fuzzy = true,                    -- false will only do exact matching
+      override_generic_sorter = true,  -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+    }
+  }
+}
+-- To get fzf loaded and working with telescope, you need to call
+-- load_extension, somewhere after setup function:
+require('telescope').load_extension('fzf')
+EOF
+
+
+"colorscheme challenger_deep
+"colorscheme darcula
 
 let g:indentLine_char = '▏'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
