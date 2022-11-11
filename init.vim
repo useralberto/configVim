@@ -46,7 +46,7 @@ so ~/.configVim/.cfvim/pluginConfig.vim
 set laststatus=2
 set noshowmode
 
-" Important!!
+"Important!!
 if has('termguicolors')
   set termguicolors
 endif
