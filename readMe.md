@@ -4,8 +4,7 @@
 
 - Instalar [Vim](https://github.com/neovim/neovim/wiki/Installing-Neovim "Vim")
 - Instalar el paquete
-  - Linux: [silversearcher-ag](https://command-not-found.com/ag "ag")
-  - Mac os: [silversearcher-ag](https://github.com/ggreer/the_silver_searcher)
+  - [fb][https://github.com/sharkdp/fd]
 - Instalar [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
 - Instalar Tmux
   - Linux: `sudo apt install tmux` (Opcional)
@@ -17,21 +16,16 @@
   - Linux, Mac os: ` mv configVim .configVim/`
 
 - Identifica tu directorio Vim o Neovim el cual tengas instalado.
-  - Ejemplo Linux y Mac os: 
-    - Vim: `~/.vim/` 
+  - Ejemplo Linux y Mac os:
     - Nvim `~/.config/nvim/`
-    
 - Crear un enlace simbólico de los archivos init.vim y coc-settings.json
   en tu directorio vim o neovim
-  Ejemplo Linux y Mac os: 
-    - Vim:
-      - 1.`cd ~/.vim/`
-      - 2.`ls -s ~/.configVim/init.vim`
-      - 3.`ls -s ~/.configVim/coc-settings.json`
-    - Neovim:
-      - 1.`cd ~/.config/nvim/` 
-      - 2.`ln -s ~/.configVim/init.vim` 
-      - 3.`ln -s ~/.configVim/coc-settings.json`
+  Ejemplo Linux y Mac os:
+
+  - Neovim:
+    - 1.`cd ~/.config/nvim/`
+    - 2.`ln -s ~/.configVim/init.vim`
+    - 3.`ln -s ~/.configVim/coc-settings.json`
 
 - Inicia vim y ejecuta:
   - `:PlugInstall` (Al iniciar por primera vez ignora los warnings que se muestran, son los plugins que no están instalados)
