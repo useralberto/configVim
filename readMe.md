@@ -17,12 +17,21 @@
   - Linux, Mac os: ` mv configVim .configVim/`
 
 - Identifica tu directorio Vim o Neovim el cual tengas instalado.
-  Ejemplo Linux y Mac os: - Vim: `/home/$your-user/.vim/` - Nvim `/home/$your-user/.config/nvim/`
+  - Ejemplo Linux y Mac os: 
+    - Vim: `~/.vim/` 
+    - Nvim `~/.config/nvim/`
+    
 - Crear un enlace simbólico de los archivos init.vim y coc-settings.json
   en tu directorio vim o neovim
-  Ejemplo Linux y Mac os: - Vim:
-  `1. cd /home/$your-user/.vim/ 2. ls -s /home/$your-user/.configVim/init.vim 3. ls -s /home/$your-user/.configVim/coc-settings.json` - Neovim:
-  `1. /home/$your-user/.config/nvim/ 2. ln -s /home/$your-user/.configVim/init.vim 3. ln -s /home/$your-user/.configVim/coc-settings.json`
+  Ejemplo Linux y Mac os: 
+    - Vim:
+      - 1.`cd ~/.vim/`
+      - 2.`ls -s ~/.configVim/init.vim`
+      - 3.`ls -s ~/.configVim/coc-settings.json`
+    - Neovim:
+      - 1.`cd ~/.config/nvim/` 
+      - 2.`ln -s ~/.configVim/init.vim` 
+      - 3.`ln -s ~/.configVim/coc-settings.json`
 
 - Inicia vim y ejecuta:
   - `:PlugInstall` (Al iniciar por primera vez ignora los warnings que se muestran, son los plugins que no están instalados)
@@ -30,7 +39,8 @@
 
 Paquetes de coc:
 
-- El uso de las extensiones de coc se migró a la una variable global "coc_global_extensions" en ~/.configVim/.cfvim/pluginConfig.vim
+- El uso de las extensiones de coc se migró a la una variable global:
+  - `coc_global_extensions` en `~/.configVim/.cfvim/pluginConfig.vim`
 
 Extra:
 
