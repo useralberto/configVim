@@ -96,7 +96,7 @@ let g:tmux_navigator_no_mappings = 1
 let g:javascript_plugin_flow = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.configVim/.cfvim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.configVim/.settings/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
