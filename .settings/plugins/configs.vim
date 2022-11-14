@@ -21,13 +21,13 @@ let g:coc_global_extensions = [
   \'coc-css',
   \'coc-go',
   \'coc-react-refactor',
-  \'coc-prettier',
   \'coc-emmet',
   \'coc-angular',
   \'coc-neosnippet',
   \'coc-html',
   \'coc-pairs',
   \'coc-flow',
+  \'coc-prettier',
   \'coc-vetur',
 \]
 "\'coc-eslint',
@@ -95,8 +95,10 @@ let g:tmux_navigator_no_mappings = 1
 
 let g:javascript_plugin_flow = 1
 
+"let g:neosnippet#snippets_directory='~/.vim/plugged/twig.vim/neosnippets'
+
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.configVim/.cfvim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.configVim/.settings/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"

@@ -10,8 +10,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
-"Plug 'lukas-reineke/indent-blankline.nvim'
-"Plug 'frazrepo/vim-rainbow'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
