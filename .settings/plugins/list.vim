@@ -6,7 +6,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'Yggdroot/indentLine'
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'posva/vim-vue'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 "Plug 'posva/vim-vue'
 "Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'frazrepo/vim-rainbow'
@@ -36,7 +37,8 @@ Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Git
-"Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-repeat'
 
 "Go

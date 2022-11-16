@@ -13,8 +13,8 @@ nmap <Leader>= <C-w>=
 map <silent> vv <c-w>v<CR>
 map <silent> cc <c-w>s<CR>
 
-nmap <A-j> :m .+1<CR>==
-nmap <A-k> :m .-2<CR>==
+nmap <C-j> :m .+1<CR>==
+nmap <C-k> :m .-2<CR>==
 
 " Quick Semi
 nmap <Leader>w :w<CR>
