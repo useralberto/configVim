@@ -4,6 +4,9 @@ let mapleader=" "
 nmap <leader>lp  <Plug>(coc-format-selected)
 nmap <leader>p :Prettier<CR>
 
+command! -nargs=0 Fm :CocCommand htmldjango.djhtml.format
+nmap <leader>fm :Fm<CR>
+
 " Split Resize
 nmap <Leader>> 10<C-w>>
 nmap <Leader>< 10<C-w><

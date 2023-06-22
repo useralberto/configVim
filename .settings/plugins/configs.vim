@@ -1,7 +1,8 @@
 "Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.scss,*.vue'
+let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.vue'
+
 
 "let g:vue_pre_processors = ['pug', 'scss']
 "let g:vue_pre_processors = 'detect_on_enter'
@@ -49,7 +50,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'sonokai',
+      \ 'colorscheme': 'gruvbox',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -124,7 +125,7 @@ set hidden
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 
 
-let g:multi_cursor_quit_key = '<A-q>'
+let g:multi_cursor_quit_key = '<C-q>'
 
 let g:coc_filetype_map = {
   \'html.twig': 'twig',

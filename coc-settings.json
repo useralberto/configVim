@@ -4,7 +4,6 @@
   "vetur.trace.server": "verbose",
   "coc.preferences.formatOnSaveFiletypes": [
     "markdown",
-    "html",
     "python",
     "json",
     "jsonc",
@@ -19,11 +18,12 @@
     "graphql",
     "twig",
     "php",
-    "java"
+    "java",
+    "htmldjango"
   ],
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Path": "~/.local/bin/autopep8"
+  "python.formatting.provider": "autopep8"
   //"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }
+//"python.formatting.autopep8Path": "~/.local/bin/autopep8"

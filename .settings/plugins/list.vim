@@ -8,6 +8,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
+Plug 'chr4/nginx.vim'
 "Plug 'posva/vim-vue'
 "Plug 'lukas-reineke/indent-blankline.nvim'
 "Plug 'frazrepo/vim-rainbow'
@@ -19,13 +20,16 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/sonokai'
-Plug 'sainnhe/edge'
+"Plug 'sainnhe/edge'
+
 
 " Tree
 Plug 'scrooloose/nerdtree'
 
 " Typing
 Plug 'alvan/vim-closetag'
+
+"Plug 'm4xshen/autoclose.nvim'
 "Plug 'tpope/vim-surround'
 
 "Tmux
@@ -52,6 +56,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdcommenter'
+
 
 call plug#end()
 
